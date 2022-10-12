@@ -71,10 +71,7 @@ namespace Red_Alert
                 .BuildServiceProvider();
 
             string
-                Token =
-                    "OTY1MjI0MTQ3NTE5MTU2MjQ0.YlwFCQ.LgeY83hSywoTbuQA6iwQtXb3HHM"; // "OTY2ODA3MTE0ODI1NzQ4NDgw.YmHHSg.uhyh7ZSO5Moj2jzkn0HH4R6ZjB0"; //  ----- Test Token
-
-            _client.Log += log;
+                Token = "YOUR DISCORD BOT TOKEN GOES HERE";
 
             _client.ButtonExecuted += MyButtonHandler;
 
@@ -1417,9 +1414,7 @@ namespace Red_Alert
             var message = arg as SocketUserMessage;
             var context = new SocketCommandContext(_client, message);
             //if (message.Author.IsBot) return;
-            if (message.Author.Id.Equals(my_id) || message.Author.Id.Equals(284371168289619978) ||
-                message.Author.Id.Equals(643853842441830400) ||
-                message.Author.Id.Equals(495147935680561152)) //to me // yahav <3 // mishkov <3 //Yeetay <3
+            if (message.Author.Id.Equals(my_id))
             {
                 int argPos = 0;
                 if (message.HasStringPrefix("Red Alert:", ref argPos))
