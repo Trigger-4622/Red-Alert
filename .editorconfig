@@ -1,0 +1,10 @@
+﻿[*.cs]
+
+# CS1998: Async method lacks 'await' operators and will run synchronously
+dotnet_diagnostic.CS1998.severity = none
+
+# CS0414: The field 'Program.date_' is assigned but its value is never used
+dotnet_diagnostic.CS0414.severity = none
+
+# CS0649: Field 'Program.arg' is never assigned to, and will always have its default value null
+dotnet_diagnostic.CS0649.severity = none
